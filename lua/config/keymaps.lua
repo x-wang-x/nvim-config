@@ -4,6 +4,7 @@
 
 -- back from insert to normal
 vim.api.nvim_set_keymap("i", "jk", "<Esc>", { noremap = false })
+vim.api.nvim_set_keymap("i", "kj", "<Esc>", { noremap = false })
 
 -- files
 vim.api.nvim_set_keymap("n", "QQ", ":q!<enter>", { noremap = false })
