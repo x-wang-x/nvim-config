@@ -1,4 +1,3 @@
-# 💤 LazyVim
+# Personal config of my neovim setup 
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+It's basically is just lazyvim distros + personal keymap,colorschemes,and lsp setup.
