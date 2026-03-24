@@ -30,6 +30,13 @@ K -> hover documentation
 [d -> prev diagnostic
 ]d -> next diagnostic
 
+------- Fold --------
+zo -> Open a fold at the cursor.
+zc -> Close a fold at the cursor.
+za -> Toggle a fold at the cursor.
+zR -> Open all folds.
+zM -> Close all folds.
+
 ```
 > [!NOTE]
 > Backup original config folder first before use.
