@@ -45,7 +45,7 @@ mv ~/.cache/nvim{,.bak}
 ```
 
 ```sh
-git clone https:///github.com/x-wang-x/nvim-config ~/.config/nvim
+git clone https://github.com/x-wang-x/nvim-config ~/.config/nvim
 ```
 
 #### Windows
@@ -56,7 +56,7 @@ Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.bak
 Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
 ```
 ```powershell
-git clone https:///github.com/x-wang-x/nvim-config $env:LOCALAPPDATA\nvim
+git clone https://github.com/x-wang-x/nvim-config $env:LOCALAPPDATA\nvim
 ```
 
 ## Current keymap
