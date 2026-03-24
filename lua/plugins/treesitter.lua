@@ -12,9 +12,8 @@ return {
     vim.opt.runtimepath:append(vim.fn.stdpath("data") .."/site")
     -- enable highlighting manually
     vim.api.nvim_create_autocmd("FileType", {
-      callback = function()
-        vim.treesitter.start()
-      end,
+      pattern = { '<filetype>' },
+      callback = function() vim.treesitter.start() end,
     })
   end,
 }
