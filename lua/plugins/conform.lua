@@ -12,6 +12,7 @@ return {
 				html = { "prettier" },
 				css = { "prettier" },
 				["*"] = { "trim_whitespace" },
+				rust = { "rustfmt", lsp_format = "fallback" },
 			},
 			format_on_save = {
 				timeout_ms = 500,
