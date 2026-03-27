@@ -1,3 +1,4 @@
+--install / load lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -13,10 +14,16 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   end
 end
 vim.opt.rtp:prepend(lazypath)
-
+-- load all config
 require("core.options")
 require("core.keymaps")
 require("core.autocmds")
 require("lazy").setup("plugins")
-
-vim.cmd.colorscheme("carbonfox")
+-- set default colorscheme
+vim.cmd.colorscheme("nightfox")
+-- set transparent
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" }) 
+-- set box sizing
+vim.opt.laststatus = 3 -- Global statusline
+vim.opt.cmdheight = 1  -- This provides the "gap" at the bottom
