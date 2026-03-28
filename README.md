@@ -48,6 +48,14 @@ zz -> scroll according to cursor into center
 zt -> scroll according to cursor into top window
 zb -> scroll according to cursor into bottom window
 
+------- Buffer -------
+
+*tips :
+1. buffer is file that currently opened
+2. buffer can be opened by ff or fg
+
+<leader>fr or <leader><space> -> navigate all buffer
+<leader>x -> delete current buffer
 
 ```
 
@@ -81,5 +89,3 @@ Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
 ```powershell
 git clone https://github.com/x-wang-x/nvim-config $env:LOCALAPPDATA\nvim
 ```
-
-## Current keymap
