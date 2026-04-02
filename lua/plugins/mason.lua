@@ -49,6 +49,7 @@ return {
 					"lua_ls",
 					"rust_analyzer",
 					"pyright",
+          "vtsls",
 				},
 				-- Automatically enable installed servers (default: true)
 				automatic_enable = true,
