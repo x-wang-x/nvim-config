@@ -8,13 +8,14 @@ return {
 		{ "<leader>wa", "<cmd>AutoSession toggle<CR>", desc = "Toggle autosave" },
 	},
 
-	---enables autocomplete for opts
-	---@module "auto-session"
-	---@type AutoSession.Config
 	opts = {
-		bypass_save_filetypes = { "alpha", "dashboard", "snacks_dashboard" }, -- or whatever dashboard you use
-		suppressed_dirs = { "~/Downloads" },
-		-- The following are already the default values, no need to provide them if these are already the settings you want.
+		auto_save = true,
+		auto_restore_last_session = true,
+		bypass_save_filetypes = nil, -- or whatever dashboard you use
+		suppressed_dirs = { "~" },
+		git_use_branch_name = true,
+		git_auto_restore_on_branch_change = true,
+		show_auto_restore_notif = true,
 		session_lens = {
 			picker = "telescope", -- "telescope"|"snacks"|"fzf"|"select"|nil Pickers are detected automatically but you can also manually choose one. Falls back to vim.ui.select
 			mappings = {
@@ -25,35 +26,14 @@ return {
 			},
 
 			picker_opts = {
-				-- For Telescope, you can set theme options here, see:
-				-- https://github.com/nvim-telescope/telescope.nvim/blob/master/doc/telescope.txt#L112
-				-- https://github.com/nvim-telescope/telescope.nvim/blob/master/lua/telescope/themes.lua
-
 				border = true,
 				layout_config = {
-					width = 0.8, -- Can set width and height as percent of window
+					width = 0.8,
 					height = 0.5,
 				},
 
-				-- For Snacks, you can set layout options here, see:
-				-- https://github.com/folke/snacks.nvim/blob/main/docs/picker.md#%EF%B8%8F-layouts
-				--
-				-- preset = "dropdown",
-				-- preview = false,
-				-- layout = {
-				--   width = 0.4,
-				--   height = 0.4,
-				-- },
-
-				-- For Fzf-Lua, picker_opts just turns into winopts, see:
-				-- https://github.com/ibhagwan/fzf-lua#customization
-				--
-				--  height = 0.8,
-				--  width = 0.50,
+				load_on_setup = true,
 			},
-
-			-- Telescope only: If load_on_setup is false, make sure you use `:AutoSession search` to open the picker as it will initialize everything first
-			load_on_setup = true,
 		},
 	},
 }

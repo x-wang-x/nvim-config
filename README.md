@@ -51,7 +51,7 @@ zt -> scroll according to cursor into top window
 zb -> scroll according to cursor into bottom window
 
 ------- Buffer -------
-*tips :
+* note :
 1. buffer is file that currently opened
 2. buffer can be opened by ff or fg
 
@@ -60,6 +60,18 @@ zb -> scroll according to cursor into bottom window
 ctrl + d -> delete buffer [window]
 ctrl + n -> new buffer [window]
 QQ -> close window
+
+----- Session -----
+
+* session is all the current opened buffer, current working dir, etc. basically anything you do before nvim closed.
+
+<leader>wr -> open session list
+<leader>wa -> toggle autosave session
+<leader>ws -> save session
+ctrl+d -> delete session
+ctrl+s -> alternate session ( wtf ?)
+ctrl+y -> copy session ( wtf ?)
+
 
 ```
 
