@@ -3,9 +3,11 @@ It's just personal config for my neovim setup.It contain colorscheme, keymap, an
 ## Keymap to remember
 
 ```
+
+----- Picker -----
 <leader> -> Space
 <leader>ff -> Find file ( telescope )
-<leader>ff -> File live grep ( telescope )
+<leader>fg -> File live grep ( telescope )
 <leader>w or WW -> save [ normal ]
 <leader>q or QQ -> quit [ normal ]
 Ctrl+s -> save [ all mode ]
@@ -13,10 +15,10 @@ jk -> exit insert mode
 esc -> clear highlight
 
 ------ Autocomplete -----
-
 Tab -> next complete
 Shift+Tab -> previous complete
 Enter -> confirm
+
 ----- Format -----
 <leader>f -> format files
 
@@ -49,13 +51,15 @@ zt -> scroll according to cursor into top window
 zb -> scroll according to cursor into bottom window
 
 ------- Buffer -------
-
 *tips :
 1. buffer is file that currently opened
 2. buffer can be opened by ff or fg
 
 <leader>fr or <leader><space> -> navigate all buffer
-<leader>x -> delete current buffer
+<leader>x -> delete current buffer [normal]
+ctrl + d -> delete buffer [window]
+ctrl + n -> new buffer [window]
+QQ -> close window
 
 ```
 
