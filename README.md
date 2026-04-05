@@ -1,7 +1,9 @@
 ## What is this ?
+
 It's just personal config for my neovim setup.It contain colorscheme, keymap, and plugins that i use.
 
 ## How to install ?
+
 > [!WARNING]
 > Backup original config folder first before use.
 
@@ -32,8 +34,11 @@ Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
 ```powershell
 git clone https://github.com/x-wang-x/nvim-config $env:LOCALAPPDATA\nvim
 ```
+
 ## Keymap to remember
+
 ### Picker
+
 ```
 <leader> -> Space
 <leader>ff -> Find file ( telescope )
@@ -44,18 +49,24 @@ Ctrl+s -> save [ all mode ]
 jk -> exit insert mode
 esc -> clear highlight
 ```
+
 ### Autocomplete
+
 ```
 Tab -> next complete
 Shift+Tab -> previous complete
 Enter -> confirm
 ```
+
 ### Format
+
 ```
 -----  -----
 <leader>f -> format files
 ```
-### LSP 
+
+### LSP
+
 ```
 K -> hover documentation
 <leader>gd -> go definitions
@@ -66,7 +77,9 @@ K -> hover documentation
 [d -> prev diagnostic
 ]d -> next diagnostic
 ```
-### Fold 
+
+### Fold
+
 ```
 zo -> Open a fold at the cursor.
 zc -> Close a fold at the cursor.
@@ -74,7 +87,9 @@ za -> Toggle a fold at the cursor.
 zR -> Open all folds.
 zM -> Close all folds.
 ```
-### Scroll 
+
+### Scroll
+
 ```
 ctrl+e -> scroll down 1 line
 ctrl+y -> scroll up 1 line
@@ -86,19 +101,26 @@ zz -> scroll according to cursor into center
 zt -> scroll according to cursor into top window
 zb -> scroll according to cursor into bottom window
 ```
-### Buffer 
+
+### Buffer
+
 > [!NOTE]
 > Buffer is file that currently opened
+
 ```
 <leader>fr or <leader><space> -> navigate all buffer
 <leader>x -> delete current buffer [normal]
-ctrl + d -> delete buffer [window]
-ctrl + n -> new buffer [window]
+ctrl + d -> delete buffer [selection]
+ctrl + n -> new buffer [selection]
+ctrl + x -> hard delete files ( remove from dir )
 QQ -> close window
 ```
-### Session 
+
+### Session
+
 > [!NOTE]
 > Session is all the current opened buffer, current working dir, etc. Basically anything you do before nvim closed.
+
 ```
 <leader>wr -> open session list
 <leader>wa -> toggle autosave session
